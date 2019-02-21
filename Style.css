@@ -1,0 +1,761 @@
+body{
+	font-family: 'Segoe UI Regular', 'Arial';
+	margin: 0;
+	/*min-width: 720px;*/
+	padding: 0;
+}
+
+#Header{
+	display: block;
+	border: solid;
+	height: 67.4px;
+	border-color: rgb(150, 150, 150);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-width: 1px;
+	margin: 0;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 1;
+}
+
+#Navs{
+	float: right;
+	margin-top: 12px;
+}
+
+#Poll{
+	display: inline-block;
+	margin-top: 8px;
+	color: rgb(53, 164, 40);
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#Logo{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+.Navigation{
+	color: black;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: bold;
+	margin: 10px;
+
+}
+
+.Current{
+	display: inline-block;
+	color: rgb(53, 164, 40);
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+#user{
+	float: right;
+	color: black;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: normal;
+	margin: 25px 10px 10px 10px;
+	cursor: pointer;
+	width: 150px;
+}
+
+#userdiv{
+	text-align: center;
+	float: right;
+}
+
+#Dropdown{
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: 32px;
+	overflow: hidden;
+	float: right;
+	background-color: white;
+	z-index: 0;
+	height: 0px;
+	width: 150px;
+	transition: height 0.2s linear 0s;
+	text-align: center;
+}
+
+.Dropdownlist{
+	display: block;
+	position: static;
+	text-decoration: none;
+	color: black;
+	text-decoration-style: none;
+	margin: 10px 0px;
+	padding: 5px;
+}
+
+#Logout{
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	margin: auto;
+	font-size: 16px;
+	text-align: center;
+	cursor: default;
+}
+
+.Button{
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 15px 15px;
+	border-radius: 5px;
+	color: white;
+	float: right;
+	margin: 7px 30px;
+	width: 60px;
+	font-size: 16px;
+	text-align: center;
+	cursor: default;
+}
+
+/*Login*/
+
+#Logintopmargin{
+	height: 80px;
+}
+
+.Logblock{
+	display: block;
+	margin: auto;
+	width: 390px;
+	border-style: solid;
+	border-width: 0px;
+}
+
+.Logblock p{
+	color: rgb(150, 150, 150);
+	font-weight: 1px;
+	margin: 20px 0 0 0;
+	padding: 0px;
+	clear: both;
+}
+
+.Label{
+	display: inline-block;
+	color: rgb(150, 150, 150);
+	font-weight: 1px;
+	margin: 20px 0 0 0;
+	padding: 0px;
+	clear: both;
+}
+
+.Label:after{
+	content: "";
+	margin-right: 30px;
+}
+
+.input{
+	display: block;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 20px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    border-width: 1px;
+    width: 348px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#Approvalcode{
+	display: block;
+	margin-top: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 17px 20px;
+	border-style: solid;
+	border-color: rgb(150, 150, 150);
+	border-radius: 5px;
+	border-width: 1px;
+	width: 350px;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+
+.Logbutton{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 352px;
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 16px 20px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.Yesorno{
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 40px;
+	width: 80px;
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 16px 20px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.Submitbutton{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Segoe UI Regular', 'Arial';
+	font-size: 17px;
+	text-align: center;
+	clear: both;
+}
+
+.Signupbutton{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	text-decoration: none;
+	color: rgb(53, 164, 40);
+	background-color: white;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border: solid 1px rgb(150, 150, 150);
+	border-radius: 5px;
+	font-family: 'Segoe UI Regular', 'Arial';
+	font-size: 17px;
+	text-align: center;
+	clear: both;
+	cursor: default;
+}
+
+#Forgotpassword{
+	color: rgb(53, 164, 40);
+	text-decoration: none;
+	float: right;
+	margin-bottom: 20px;
+}
+
+/*Signup*/
+
+.radio{
+	display: inline-block;
+	transform: scale(1.2);
+	margin-right: 8px;
+	cursor: pointer;
+	padding: 0;
+    margin-top: 17px;
+    vertical-align: top;
+}
+
+.Studentradio{
+	display: inline-block;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+.Facultyradio{
+	display: inline-block;
+}
+
+/*Forgot password*/
+
+#Resend{
+	color: rgb(53, 164, 40);
+	text-decoration: none;
+	float: left;
+}
+
+.errors{
+	color: red;
+	display: block;
+}
+
+/**************************first poll****************************/
+
+.body{
+	margin: auto;
+	padding: 0;
+}
+
+.Questions{
+	display: block;
+	width: 90%;
+	margin: auto;
+	padding: 30px;
+}
+
+#Question{
+	display: block;
+}
+
+.Question{
+	font-size: 20px;
+}
+
+.Qsubmitbutton{
+	display: block;
+	margin-top: 15px;
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 15px 24px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Segoe UI Regular', 'Arial';
+	font-size: 17px;
+	text-align: center;
+}
+
+#Options{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px 0 0;
+	padding: 0px;
+	height: 130px;
+}
+
+#Yesradio{
+	display: inline-block;
+	margin-right: 12.5px;
+}
+
+#Yesoption h3{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#Yesoption{
+	padding: 12.5px;
+	padding-left: 0;
+	margin-bottom: 35px;
+}
+
+#Noradio{
+	display: inline-block;
+	margin-right: 12.5px;
+}
+
+#Nooption h3{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#Nooption{
+	padding: 12.5px;
+	padding-left: 0;
+
+}
+
+#Bars{
+	display: inline-block;
+	width: 85%;
+	margin: 0;
+	padding: 0;
+	height: 130px;
+}
+
+.Bars{
+	display: inline-block;
+	background-color: rgb(53, 164, 40) ;
+	height: 50px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.Percent{
+	display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    padding-top: 12px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;	
+}
+
+#Yesbar{
+	display: inline-block;
+	background-color: rgb(53, 164, 40);
+	height: 50px;
+	width: 90%;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+#Yespercent{
+	display: inline-block;
+	margin: 0 0 0 0;
+	vertical-align: top;
+	padding-top: 12.5px;
+	padding-left: 5px;
+}
+
+#Nobar{
+	display: inline-block;
+	background-color: rgb(53, 164, 40);
+	height: 50px;
+	width: 27%;
+	border-radius: 5px;
+}
+
+#Nopercent{
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	padding-top: 12.5px;
+	padding-left: 5px;
+}
+
+#Pollerror{
+	display: block;
+	margin-top: 5px;
+}
+
+#Comments{
+	width: 90%;
+	margin: auto;
+}
+
+#Csubmitbutton{
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 15px 15px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	margin: 7px 30px;
+	font-size: 16px;
+	text-align: center;
+	cursor: default;
+}
+
+/**********************************************************Signups*******************************************************/
+
+.Questions table th, .Questions table td{
+	padding: 12px 16px;
+	font-size: 17px;
+}
+
+table{
+	display: block;
+	width: max-content;
+	margin: auto;
+	overflow-x: scroll;
+	text-align: left;
+}
+
+/*****************************Approveblock******************************/
+
+#Approveblock{
+	width: 352px;
+	padding: 20px;
+}
+
+#Approveblock h1, #Rejectblock h1{
+	margin-top: 0;
+}
+
+#Rejectblock{
+	width: 352px;
+	padding: 20px;
+}
+
+#Approveuser{
+	display: block;
+	margin-top: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 15px 20px;
+	border-style: solid;
+	border-color: rgb(150, 150, 150);
+	border-radius: 5px;
+	border-width: 1px;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+
+.Rejectbutton{
+	text-decoration: none;
+	background-color: rgb(195, 14, 22);
+	padding: 10px 16px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.Approvebutton{
+	display: block;
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 10px 16px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.Viewbutton{
+	text-decoration: none;
+	background-color: rgb(53, 164, 40);
+	padding: 15px 24px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.Deletebutton{
+	text-decoration: none;
+	background-color:  rgb(195, 14, 22);
+	padding: 15px 24px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+#iframebackground{
+	display: none;
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	width: 100%;
+}
+
+#createpolliframebackground{
+	display: none;
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	width: 100%;
+}
+
+#iframe{
+	width: 392px;
+    height: 592px;
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.alradio{
+	display: inline-block;
+	transform: scale(1.2);
+	margin-right: 8px;
+	cursor: pointer;
+	margin: 10px 10px 10px 0;
+}
+
+.Approvebuttonf{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	text-decoration: none;
+	padding: 17px 20px;
+	width: 352px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+#Approvebuttonf{
+	background-color: rgb(53, 164, 40);
+}
+
+#Rejectbuttonf{
+	background-color: rgb(195, 14, 22);
+}
+
+.Ok{
+	display: block;
+	margin: 5px auto;
+	text-decoration: none;
+	color: white;
+	background-color: rgb(53, 164, 40);
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border: solid 1px rgb(150, 150, 150);
+	border-radius: 5px;
+	font-family: 'Segoe UI Regular', 'Arial';
+	font-size: 17px;
+	text-align: center;
+	cursor: default;
+}
+
+/***************************************************Create poll********************************************************/
+
+#inputnumber{
+	display: block;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 20px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    border-width: 1px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+}
+
+#Questioninput{
+	display: block;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    border-width: 1px;
+    min-width: 900px;
+    min-height: 100px;
+    font-size: 20px;
+}
+
+.Optioninput{
+	display: block;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 20px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 5px;
+    border-width: 1px;
+    width: 348px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.Polls{
+	min-width: 600px;
+    height: 100px;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    border: solid 1px rgb(150,150,150);
+    margin: 20px auto;
+}
+
+
+#pollcreatesuccess{
+	padding: 20px;
+	width: 392px;
+    height: auto;
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+.Option{
+	display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    margin: 0;
+    font-size: 18px;
+    width: 80px;
+}
+
+.Button:hover, .Logbutton:hover, .Submitbutton:hover, #Logout:hover, .Qsubmitbutton:hover, #Csubmitbutton:hover, .Approvebutton:hover, #Approvebuttonap:hover, #Approvebuttonf:hover, .Ok:hover, .Viewbutton:hover{
+	background-color: rgb(44, 134, 34);
+}
+
+.Dropdownlist:hover{
+	background-color: rgb(53, 164, 40);
+}
+
+.Signupbutton:hover{
+	background-color: rgb(53, 164, 40);
+	color: white;
+}
+
+.Signupbutton:active, .Button:active, .Logbutton:active, .Submitbutton:active, #Logout:active, .Qsubmitbutton:active, #Csubmitbutton:active, .Approvebutton:active, #Approvebuttonap:active, #Approvebuttonf:active, .Ok:active, .Viewbutton:active{
+	background-color: rgb(32, 101, 24);
+}
+
+.Rejectbutton:hover, #Rejectbuttonf:hover, .Deletebutton:hover{
+	background-color: rgb(143, 12, 18);
+}
+
+.Rejectbutton:active, #Rejectbuttonf:active, .Deletebutton:active{
+	background-color: rgb(101, 7, 12);
+}
+
+#Resend:hover, #Forgotpassword:hover{
+	text-decoration: underline;
+}
+
+:focus{
+	outline-color: rgb(53, 164, 40);
+}
