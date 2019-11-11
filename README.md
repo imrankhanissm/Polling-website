@@ -1,2 +1,1 @@
 # Polling-website
-Web appllication
